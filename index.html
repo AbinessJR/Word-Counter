@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Word Counter</title>
+    <title>Launch Word Counter</title>
 </head>
 <body>
-    <applet code="WordCounter.class" width="400" height="300">
-        Your browser does not support Java applets.
-    </applet>
+    <h1>Word Counter</h1>
+    <p>Click the button below to launch the Word Counter application:</p>
+    <button onclick="launchJavaApp()">Launch Word Counter</button>
+
+    <script>
+        function launchJavaApp() {
+            var jnlpFile = "WordCounterSwing.jnlp"; // Path to your JNLP file
+
+            if (navigator.javaEnabled()) {
+                document.location.href = jnlpFile;
+            } else {
+                alert("Java is not enabled in your browser. Please enable Java to run the application.");
+            }
+        }
+    </script>
 </body>
 </html>
