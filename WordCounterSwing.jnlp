@@ -8,5 +8,5 @@
         <j2se version="1.8+"/>
         <jar href="WordCounterSwing.jar"/>
     </resources>
-    <application-desc main-class="WordCounterSwing"/>
+    <application-desc main-class="WordCounter"/>
 </jnlp>
